@@ -1,0 +1,42 @@
+* { 
+	box-sizing: border-box;
+    	margin: 0;
+}
+body {
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #CCCCCC;
+}
+
+
+main {   
+	background-color: #FFFFFF;
+      color: #000000;
+	padding: 1em; 
+}
+aside { 
+	text-align: center; 
+}
+
+.floatleft{
+	float:left;
+	margin-left:6px;
+	
+}
+
+#contactForm {
+	text-align: right;
+	float: left;
+	width: 250px;
+}
+#tableLabel {
+	text-align: right;
+}
+#name {
+	text-align: right;
+}
+#tableData {
+	text-align: right;
+}
+#tableData {
+	text-align: right;
+}
