@@ -1,4 +1,4 @@
-import app from './app';
+import app from './server/config/app';
 import debug from 'debug';
 debug('week3-002:server');
 import http from 'http';
