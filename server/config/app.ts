@@ -13,6 +13,7 @@ import flash from 'connect-flash';
 import { isLoggedIn } from "../middleware";
 import * as DBConfig from './db';
 
+
 const StoreOptions = {
   store: MongoStore.create({
     mongoUrl: ((DBConfig.RemoteURI) ? DBConfig.RemoteURI : DBConfig.LocalURI)
@@ -24,6 +25,7 @@ const StoreOptions = {
     maxAge: 600000
   }
 }
+
 
 import indexRouter from '../routes/index';
 import contactRouter from '../routes/contact';
@@ -55,8 +57,11 @@ app.use(express.static(path.join(__dirname, '../../node_modules')));
 //connect-flash initialization
 app.use(flash());
 
+/*
 //express session initialization
 app.use(session(StoreOptions));
+
+*/
 
 //passport initialization
 app.use(passport.initialize());

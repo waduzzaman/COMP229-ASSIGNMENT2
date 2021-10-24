@@ -69,7 +69,7 @@ export function ProcessAddPage(req: express.Request, res: express.Response, next
         "emailAddress": req.body.emailAddress
     });
 
-    ContactModel.create(newItem, (err) => {
+    ContactModel.create(newItem, (err: any) => {
         if (err) {
             console.error(err);
             res.end(err);
